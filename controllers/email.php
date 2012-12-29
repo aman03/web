@@ -61,7 +61,7 @@ class Email extends Z_Controller {
   }
 
   public function aboutus() {
-    echo file_get_contents('http://yahoo.com');
+   
     $data['title'] = 'Sitename: About us';
     $data['heading'] = 'About us';
     $this->renderView('email/aboutus', $data);
