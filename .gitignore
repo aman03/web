@@ -1,3 +1,6 @@
 /nbproject
 /.htaccess
 /appllication/config/database.php
+/*.swp
+/*.swo
+/*.db
