@@ -51,8 +51,6 @@ class User extends Z_Controller {
 
   public function edit_my_profile() {
     $this->emailfunctions->gatekeeper();
-    $this->load->model('User_model');
-    
 
     $this->load->library('form_validation');
     $data['title'] = 'edit profile';

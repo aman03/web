@@ -9,7 +9,6 @@ class Email extends Z_Controller {
   // this is new comment add more comment here.
   public function inbox($label_id = 0, $message_id = 0) {
     $this->emailfunctions->gatekeeper();
-    $this->load->model('Message_model');
     if($message_id){
       $this->Message_model->readMessage($message_id);
       $data['body'] = $this->Message_model->pullMessage($message_id);
@@ -29,7 +28,6 @@ class Email extends Z_Controller {
 
   public function career() {
     $this->load->library('form_validation');
-    $this->load->model('Message_model');
 
     if ($this->input->post('save')) {
       $this->form_validation->set_rules('fname', 'Fname', 'trim|required|xss_clean');
@@ -72,7 +70,6 @@ class Email extends Z_Controller {
   public function contactus() {
 
     $this->load->library('form_validation');
-    $this->load->model('Message_model');
     if ($this->input->post('save')) {
       $this->form_validation->set_rules('fname', 'Fname', 'trim|required|xss_clean');
       if (!$this->form_validation->run()) {
@@ -103,7 +100,6 @@ class Email extends Z_Controller {
   }
 
   public function view($id) {
-    $this->load->model('Message_model');
     $data['entity'] = $this->Message_model->view($id);
     $data['title'] = 'Sitename: contact us';
     $data['heading'] = $data['entity']->subject;
@@ -112,7 +108,6 @@ class Email extends Z_Controller {
 
   public function delete($id) {
 
-    $this->load->model('Message_model');
     if ($this->Message_model->delete($id, $this->session->userdata('logged_in'))) {
 
       $this->session->set_flashdata('success_message', 'Record has been deleted.');
@@ -122,7 +117,6 @@ class Email extends Z_Controller {
   }
 
   public function bulk() {
-    $this->load->model('Message_model');
     if ($this->input->post('move') == 'move') {
       $this->Message_model->move($this->input->post('message_ids'), $this->input->post('lable_id'), $this->session->userdata('logged_in'));
       $this->session->set_flashdata('success_message', 'Messages has been moved.');
@@ -136,7 +130,6 @@ class Email extends Z_Controller {
 
   public function compose() {
     $this->load->library('form_validation');
-    $this->load->model('Message_model');
     $this->load->model('User_model');
     if ($this->input->post('send')) {
       $this->form_validation->set_rules('subject', 'subject', 'trim|required|xss_clean');

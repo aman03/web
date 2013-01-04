@@ -4,12 +4,12 @@ class Lable extends Z_Controller {
 
   public function __construct() {
     parent::__construct();
-    $this->load->model('lable_model');
+    $this->load->model('Lable_model');
   }
 
   public function index($lable_id = false) {
     $this->emailfunctions->gatekeeper();
-    $this->load->model('Lable_model');
+    
     $this->load->library('form_validation');
     $data['title'] = 'lable';
     $data['heading'] = 'lable';
