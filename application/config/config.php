@@ -362,15 +362,3 @@ $config['proxy_ips'] = '';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
-$user=new stdClass();
-$user->id=1;
-$user->username='sunil';
-$user->password='12345';
-$user->fname='sunil';
-$user->lname='kapoor';
-$user->dob='5555-99-87';
-$user->phoneno='9815170865';
-$user->gender='m';
-$user->is_admin=1;
-
-$config['user_object'] = $user;
