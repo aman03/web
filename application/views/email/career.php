@@ -1,17 +1,37 @@
-<form action="" method="post">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
 
-
-        <dl>
-            <dt><h4>First name:</h4></dt>
-            <dd>  <input type="text" name="fname"/></dd>
-            <dt><h4>Last name:</h4></dt>
-            <dd> <input type="text" name="lname" /></dd>
-
-            <dt><h4>phone no:</h4></dt>
-            <dd> <input type="text" name="phone no:"/></dd>
-            <dt><h4>attachment:</h4></dt>
-            <dd> <input type="file" value="resume"name=" attachment"/></dd>
-            <dd> <input type="submit" name="save"/></dd>
-        </dl>
-
-</form>
+<body>
+    <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+        <p>
+            <label>First name
+                <input type="text" name="First name" id="First name" />
+            </label>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            <label>Last name
+                <input type="text" name="Last name" id="Last name" />
+            </label>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            <label>Phone no
+                <input type="text" name="Phone no" id="Phone no" />
+            </label>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            <label>File Upload
+                <br />
+                <br />
+                <input type="file" name="fileField" id="fileField" />
+            </label>
+        </p>
+        <p>
+            <input type="submit" name="Submit" id="button" value="Submit" />
+        </p>
+    </form>
+</body>
+</html>
