@@ -53,8 +53,8 @@ class User extends Z_Controller {
         $this->emailfunctions->gatekeeper();
 
         $this->load->library('form_validation');
-        $data['title'] = 'edit profile';
-        $data['heading'] = 'edit profile';
+        $data['title'] = 'Edit profile';
+        $data['heading'] = 'Edit profile';
         if ($this->input->post('save') === 'Save') {
 
             $this->form_validation->set_rules('username', 'username', 'trim|required|xss_clean');

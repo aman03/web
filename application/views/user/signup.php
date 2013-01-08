@@ -1,27 +1,20 @@
 
 <form action="" method="post">
-    <fieldset class="Sign Up">
-        <h2> Sign Up</h2>
-        <dl>
-            <dt><h4>First name:</h4></dt>
-            <dd>  <input type="text" name="fname"/></dd>
-            <dt><h4>Last name:</h4></dt>
-            <dd> <input type="text" name="lname" /></dd>
-
-            <dt><h4>Username:</h4></dt>
-            <dd> <input type="text" name="username"/></dd>
-            <dt><h4>Password:</h4></dt>
-            <dd> <input type="password" name="password"/></dd>
-            <dt><h4>Confirm Password:</h4></dt>
-            <dd> <input type="password" name="cpassword"/></dd>
-            <dt><h4>Gender </h4></dt>
-            <input type="radio" value="male" name="gender" checked="checked" />
-            <label class="choice" for="element_8_1">Male</label>
-            <input type="radio" value="female" name="gender" />
-            <label class="choice" for="element_8_2">Female</label>
-            <dt><h4>Phone no </h4></dt>
-            <dd> <input type="text" name="phoneno"></dd>
-            <dd><input type="submit" value="submit" name="signup"/></dd>
-        </dl>
-    </fieldset>
+  <fieldset class="Sign Up">
+    <h2> Sign Up</h2>
+    <table> 
+      <tr><td>First name:</td><td><input type="text" name="fname" value="" /></td></tr>
+      <tr><td>Last name:</td><td><input type="text" name="lname" value="" /></td></tr>
+      <tr><td>Username :</td><td><input type="text" name="username" value="" /></td></tr>
+      <tr><td>Password :</td><td><input type="text" name="password:" value="" /></td></tr>
+      <tr><td>Confirm Password :</td><td><input type="text" name="cpassword" value="" /></td></tr>
+      <tr><td>Gender </td>
+        <td><input type="radio" value="male" name="gender" checked="checked" />
+        <label class="choice" >Male</label>
+        <input type="radio" value="female" name="gender" />
+        <label class="choice" >Female</label></td></tr>
+      <tr><td>Phone no::</td><td><input type="text" name="phone no:" value="" /></td></tr>
+      <tr><td></td><td><input type="submit" name="submit" value="submit" /></td></tr>
+    </table>
+  </fieldset>
 </form>

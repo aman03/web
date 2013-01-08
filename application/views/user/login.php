@@ -1,10 +1,7 @@
 
-   <?php echo form_open('verifylogin'); ?>
-     <label for="username">Username:</label>
-     <input type="text" size="20" id="username" name="username"/>
-     <br/>
-     <label for="password">Password:</label>
-     <input type="password" size="20" id="passowrd" name="password"/>
-     <br/>
-     <input type="submit" value="Login"/>
-   </form>
+<?php echo form_open('verifylogin'); ?>
+<table>
+  <tr><td> Username:</td><td><input type="text" name="username" value="" /></td></tr>
+      <tr><td>Password :</td><td><input type="password" name="password" value="" /></td></tr>
+      <tr><td><input type="submit" name="submit" value="Submit" /></td></tr>
+</table>
