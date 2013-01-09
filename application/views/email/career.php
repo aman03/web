@@ -1,3 +1,4 @@
+
 <form action="" method="post">
  <table>
 
@@ -8,4 +9,5 @@
         <input type="file" name="file_upload" id="file" /> </td></tr>
     <tr><td></td><td><input type="submit" name="send" value="Send" /></td></tr>
     </table>
+
 </form>
