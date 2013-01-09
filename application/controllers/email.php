@@ -54,7 +54,7 @@ class Email extends Z_Controller {
             }
         }
         $data['title'] = 'Sitename: career';
-        $data['heading'] = 'career';
+        $data['heading'] = 'Career';
 
         $this->renderView('email/career', $data);
     }
@@ -95,7 +95,7 @@ class Email extends Z_Controller {
         }
 
         $data['title'] = 'Sitename: contact us ';
-        $data['heading'] = 'contact us';
+        $data['heading'] = 'Contact us';
 
         $this->renderView('email/contactus', $data);
     }
@@ -156,7 +156,7 @@ class Email extends Z_Controller {
             }
         }
         $data['title'] = 'Sitename: compose';
-        $data['heading'] = 'compose';
+        $data['heading'] = 'Compose';
         $data['users'] = $this->User_model->getMyFriends($this->session->userdata('logged_in')->id);
 
         $this->renderView('email/compose', $data);

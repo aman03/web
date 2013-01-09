@@ -5,21 +5,14 @@ working the way we need.
 
 <form action="" method="post">
 
+    <table>
+        <tr><td>First name:</td><td><input type="text" name="fname" value="" /></td></tr>
+        <tr><td>Last name :</td><td><input type="text" name="lname" value="" /></td></tr>
+        <tr><td>Phone no::</td><td><input type="text" name="phone no:" value="" /></td></tr>
+        <tr><td>Email:</td><td><input type="text" name="email" value="" /></td></tr>
+        <tr><td>Description:</td><td><textarea rows="4" rows="50"/>
+                </textarea></td></tr>
 
-    <dl>
-        <dt><h4>First name:</h4></dt>
-        <dd>  <input type="text" name="fname"/></dd>
-        <dt><h4>Last name:</h4></dt>
-        <dd> <input type="text" name="lname" /></dd>
-
-        <dt><h4>phone no:</h4></dt>
-        <dd> <input type="text" name="phone no:"/></dd>
-        <dt><h4>Email:</h4></dt>
-        <dd> <input type="text" name="Email:"/></dd>
-        <dt><h4>description:</h4></dt>
-        <textarea rows="4" rows="50"/>
-        </textarea>
-        <dd> <input type="submit" name="save"/></dd>
-    </dl>
-
+        <tr><td></td><td><input type="submit" name="send" value="Send" /></td></tr>
+    </table>
 </form>
