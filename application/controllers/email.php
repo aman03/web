@@ -17,6 +17,7 @@ class Email extends Z_Controller {
         $data['title'] = 'Email title here';
         $data['heading'] = 'This is new heading';
         $data['query'] = $this->Message_model->getMessages($this->session->userdata('logged_in'), $label_id);
+        
 
         $this->renderView('email/emails', $data);
     }

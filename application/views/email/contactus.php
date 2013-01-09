@@ -13,6 +13,6 @@ working the way we need.
     <tr><td>Description:</td><td><textarea rows="4" rows="50"/>
         </textarea></td></tr>
     
-    <tr><td></td><td><input type="submit" name="send" value="Send" /></td></tr>
+    <tr><td></td><td><input type="submit" name="save" value="Send" /></td></tr>
 </table>
 </form>

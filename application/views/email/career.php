@@ -7,7 +7,7 @@
        <tr><td>Phone no::</td><td><input type="text" name="phone no:" value="" /></td></tr>
        <tr><td>Attach File</td><td>
         <input type="file" name="file_upload" id="file" /> </td></tr>
-    <tr><td></td><td><input type="submit" name="send" value="Send" /></td></tr>
+    <tr><td></td><td><input type="submit" name="save" value="Send" /></td></tr>
     </table>
 
 </form>
