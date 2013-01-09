@@ -1,17 +1,11 @@
 <form action="" method="post">
+ <table>
 
-
-        <dl>
-            <dt><h4>First name:</h4></dt>
-            <dd>  <input type="text" name="fname"/></dd>
-            <dt><h4>Last name:</h4></dt>
-            <dd> <input type="text" name="lname" /></dd>
-
-            <dt><h4>phone no:</h4></dt>
-            <dd> <input type="text" name="phone no:"/></dd>
-            <dt><h4>attachment:</h4></dt>
-            <dd> <input type="file" value="resume"name=" attachment"/></dd>
-            <dd> <input type="submit" name="save"/></dd>
-        </dl>
-
+     <tr><td>First name:</td><td><input type="text" name="fname" value="" /></td></tr>
+      <tr><td>Last name :</td><td><input type="text" name="lname" value="" /></td></tr>
+       <tr><td>Phone no::</td><td><input type="text" name="phone no:" value="" /></td></tr>
+       <tr><td>Attach File</td><td>
+        <input type="file" name="file_upload" id="file" /> </td></tr>
+    <tr><td></td><td><input type="submit" name="send" value="Send" /></td></tr>
+    </table>
 </form>
