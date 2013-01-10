@@ -9,15 +9,23 @@ class User extends Z_Controller {
 
     public function signup() {
 
-
+ 
         $this->load->library('form_validation');
         if ($this->input->post('signup')) {
+        
+        
+            $this->form_validation->set_rules('fname', 'Fname', 'trim|required');
+              $this->form_validation->set_rules('lname', 'Lname', 'trim|required');
             $this->form_validation->set_rules('username', "Username", 'trim|required|xss_clean');
             $this->form_validation->set_rules('password', 'Password', 'trim|required|matches[cpassword]|md5');
             $this->form_validation->set_rules('cpassword', 'Password Confirmation', 'trim|required');
+              $this->form_validation->set_rules('phoneno', 'Phoneno', 'trim|required');
+                          
+
 
 
             if (!$this->form_validation->run()) {
+                             
                 //null
             } else {
                 $user_data = array(
@@ -28,18 +36,29 @@ class User extends Z_Controller {
                     'dob' => $this->input->post('dob'),
                     'gender' => $this->input->post('gender'),
                     'phoneno' => $this->input->post('phoneno'),
+                        
+
                 );
                 $this->User_model->register($user_data);
+               
+              
+                
+                 
             }
+              
         }
         $data['title'] = 'Sitename: signup';
         $data['heading'] = 'signup';
+         
+        
         $this->renderView('user/signup', $data);
+        
+       
     }
 
     public function login() {
         $data['title'] = 'Sitename: login';
-        $data['heading'] = 'login';
+        $data['heading'] = 'Login';
         $this->renderView('user/login', $data);
     }
 
